@@ -2,7 +2,7 @@
 Password Generator Pro
 PGP by Edward
 
-Run setup.py To Start App
+Run setup.py To Start The App
 
 
 Password Generetor Pro v1.2
