@@ -2,6 +2,9 @@
 Password Generator Pro
 PGP by Edward
 
+Run setup.py To Start App
+
+
 Password Generetor Pro v1.2
 
 IMPORT !!! : dont change a name,path,format and text Files just add method 
