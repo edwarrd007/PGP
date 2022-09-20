@@ -12,7 +12,7 @@ install requierd :
 
 Config File:
 	config.txt:
-		Change Word Methods (CWM):
+		Change Word Methods (CWM):\n
 			a=@
 			you can change this method 
 			Exampel : a=%
