@@ -1,7 +1,7 @@
 #usr/bin/python3
 
 '''
-athor : Edward
+author : @Edwarrd007
 date :2022/02/21
 version : 1.2v
 
