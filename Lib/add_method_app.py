@@ -1,3 +1,10 @@
+'''
+author : @Edwarrd007
+date :2022/02/21
+version : 1.2v
+
+'''
+
 import tkinter as tk
 from tkinter.messagebox import showinfo,askokcancel,showerror
 from tkinter.filedialog import askopenfilename
