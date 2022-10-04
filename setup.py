@@ -1,7 +1,7 @@
 #usr/bin/python3
 
 '''
-author : @Edwarrd007
+athor : Edward
 date :2022/02/21
 version : 1.2v
 
@@ -82,7 +82,7 @@ def endword(passwords):
 
 
 ################################
-changewordmethod = {'a':'@','s':'$','o':'0','t':'7'}
+changewordmethod = lolaii()[0]
 def changeword(passwords):
 	#this method Change the words with your methods
 	#Example : password = p@ssword
@@ -163,6 +163,7 @@ def foo(x):
 
 
 def capitalword(passwords):
+	#Soon !!
 	pass
 
 
