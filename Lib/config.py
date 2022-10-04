@@ -1,4 +1,8 @@
+from pathlib import Path
+import os
 
+BASE_DIR = Path(__file__).resolve().parent.parent
+pathconfig = os.path.join(BASE_DIR,'config.txt')
 EWM=''
 CWM=''
 text = None
@@ -29,7 +33,7 @@ def add_config(x,res):
 	ccres=None
 	ret = []
 	ret1 = []
-	with open('config.txt','r') as ww :
+	with open(pathconfig,'r') as ww :
 		ccres = ww.readlines(900000)
 
 	if type(res)==dict:
@@ -58,7 +62,7 @@ def add_config(x,res):
 		save(ret)
 
 def save(result):
-	with open('config.txt','w') as w:
+	with open(pathconfig,'w') as w:
 		for i in result:
 			w.write(i)
 def openf():
@@ -73,7 +77,7 @@ def openf():
 
 def check_true():
 	global text
-	with open('config.txt','r') as w:
+	with open(pathconfig,'r') as w:
 		text = w.read().replace('\n','')
 		if ':' in text and 'EWM' in text and 'CWM' in text:
 			return 1
