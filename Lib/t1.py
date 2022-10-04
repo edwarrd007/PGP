@@ -1,7 +1,13 @@
 import subprocess as sub
+from pathlib import Path
+import os
+
+BASE_DIR = Path(__file__).resolve().parent
+patht2 = os.path.join(BASE_DIR,'t2.py')
+
 
 def generate_halat(halat,tas):
-	w = open('Lib/t2.py','w')
+	w = open(patht2,'w')
 	mimi = 'i'
 	tab = ''
 	w.write('l=[]')
@@ -31,7 +37,7 @@ def generate(halat,cont):
 	lolo=[]
 	xx=0
 	generate_halat(halat,cont)
-	x = sub.check_output('python Lib/t2.py',shell=True)
+	x = sub.check_output(f'python {patht2}',shell=True)
 
 	tar = x.decode().strip().replace('[','').replace(']','').replace(',','').replace(' ','')
 	#for i in range(len(x)):
